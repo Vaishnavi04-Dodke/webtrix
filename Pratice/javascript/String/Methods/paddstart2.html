@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaddStart</title>
+</head>
+<body>
+    The padStart() method is a string method.
+
+To pad a number, convert the number to a string first.
+    <h1>JavaScript Strings</h1>
+<h2>The padStart() Method</h2>
+
+<p>The padStart() method pads a string from the start.</p>
+<p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+<p id="demo"></p>
+
+<script>
+let num = 5;
+let text=num.toString();
+text = text.padStart(4,"0");
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-method</title>
+</head>
+<body>
+    <script>
+        let money={
+            earing:6000,
+            amount:12000,
+            remaining:function(){
+              return"Your remaining ammount is "+(this.earing-this.amount);
+            }
+           
+        }
+        console.log(money.remaining());
+    </script>
+</body>
+</html>

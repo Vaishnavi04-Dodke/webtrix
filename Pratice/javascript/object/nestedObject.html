@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+        let Vaccancy = {
+            // object  property
+            fname: "vaishnavi",
+            lname: "Dodke",
+            age: 24,
+            Education: "MCA",
+            passout: 2023,
+            percentage: "70%",
+            //  nested object 
+            Eligible: {
+                true: "You are eligible",
+                false: "You are not eligible"
+            }
+        }
+        // object createted
+        // how to access the nested object property
+        console.log(Vaccancy.Eligible.true);
+        console.log(Vaccancy.Eligible.false);
+    </script>
+</body>
+
+</html>

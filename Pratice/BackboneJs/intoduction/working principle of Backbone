@@ -1,0 +1,14 @@
+Working Principle Of Backbone js:
+    Http Request
+    1.Router
+    2.View
+    3.Events
+    4.Model
+    5.Collection
+    6.Data source
+
+Router: 
+    Every Backbone js applicatin satrt from Router.
+    Http request is mainly role for connect view for router
+    View is presentation part of every backbone js application
+        

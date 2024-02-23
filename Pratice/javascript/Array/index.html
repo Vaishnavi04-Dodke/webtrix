@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        let student = [{ Name: "Vaishu", Age: 24 },
+        { Name: "Vishal", Age: 22 },
+        { Name: "Sneha", Age: 24 },
+        { Name: "mona", Age: 26 }
+        ];
+        let person = [{ FirstNmae: "Swati", LastName: "Munde" },
+        { FirstNmae: "Vishal", LastName: "Dodke" },
+        { FirstNmae: "Shivkanya", LastName: "Shinde" },
+        { FirstNmae: "Vaishu", LastName: "Shinde" }
+        ];
+        let matchingNames = [];
+
+        for (let i = 0; i < student.length; i++) {
+            for (let j = 0; j < person.length; j++) {
+                if (student[i].Name == person[j].FirstNmae) {
+                    matchingNames.push(student[i].Name);
+                    console.log("Matching names:", matchingNames);
+                }
+            } +
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        function countVowels(str) {
+            let count=0
+            for (const char of str) {
+                if(char==="a" || char==="e "|| char==="i"|| char==="o"||char==="u" ){
+                    count++;
+                }
+
+            }
+            
+            return count;
+        };
+        const vowelCount = countVowels("Apnacollege");
+    console.log("Number of vowels:", vowelCount); 
+    </script>
+</body>
+
+</html>

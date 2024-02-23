@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamically Delete object property</title>
+</head>
+
+<body>
+    <script>
+        // construnxtor function name defined in pascal case
+        const Studentdata = function (education) {
+            this.fname = "vaishnavi",
+            this.lname ="Dodke",
+            this.age=24,
+            this.Education=education,
+            this.passout= 2023,
+           this.percentage ="70%",
+            // object method
+            this.hire= function hire() {
+                console.log("You are eligible for this job")
+            },
+            //  nested object 
+            this.Eligible= {
+                true: "You are eligible",
+                false: "You are not eligible"
+        }
+    }
+    const student=new Studentdata("Mca");
+    // delete the property
+    delete student.Education
+    console.log(student);
+    </script>
+</body>
+
+</html>

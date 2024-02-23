@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* =============================================navbar section start====================================================================== */
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 5px 20px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* logo css */
+.navbar-container .logo {
+  color: #37447E;
+  font-size: 26px;
+  line-height: 38px;
+  font-family: Roboto;
+}
+
+/* nav-list css */
+.navbar-container .nav-list {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+}
+
+.navbar-container .nav-list .nav-item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.navbar-container .nav-list .nav-item a {
+  text-transform: capitalize;
+  color: #505F98;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-container .nav-list .nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: yellow;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar-container .nav-list .nav-item a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-container .nav-list .nav-item a:hover {
+  color: #2980b9;
+}
+
+/* button css */
+.button-container {
+  display: flex;
+  margin-left: auto;
+}
+
+.button-container .button-primary,
+.button-container .button-secondary {
+  background-color: #1d3452;
+  color: #ffff;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.button-container .button-secondary {
+  background-color: rgb(240, 196, 114);
+}
+
+.button-container .button-primary:hover {
+  border: 2px solid rgb(147, 7, 147);
+  background-color: #2980b9;
+}
+
+.button-container .button-secondary:hover {
+  border: 2px solid rgb(147, 7, 147);
+  background-color: orange;
+}
+
+/* humburger menu */
+.navbar-container .icon i {
+  margin-top: 5px;
+  font-size: 25px;
+  color: black;
+  display: none;
+  cursor: pointer;
+}
+
+/* responsive navbar */
+@media only screen and (max-width: 768px) {
+  .navbar-container .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-container .nav-list.show {
+    display: flex;
+  }
+
+  .navbar-container .nav-list .nav-item {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .navbar-container .icon i {
+    display: block;
+  }
+}
+
+/* ==================================== Hero Section =========================================== */
+.hero-section {
+  padding: 0 20px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.left-side {
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.hero-content .left-side h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.2;
+  color: #091133;
+  font-size: 2.48832rem;
+  letter-spacing: 1px;
+  font-size: 3.125em;
+}
+
+.hero-content .left-side p {
+  font-size: 1.2rem;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #505F98 !important;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.875em;
+
+}
+
+
+.hero-content .left-side .button-primary {
+  padding: 5px 20px;
+  color: white;
+  border-radius: 5px;
+  background-color: #111B47;
+  margin: 10px 2px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+  border: none;
+}
+
+.hero-content .left-side .button-secondary {
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 2px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: none;
+  border: 2px solid #111B47;
+}
+
+.hero-content .left-side .button-primary:hover {
+  border: 2px solid purple;
+}
+
+.hero-content .left-side .button-secondary:hover {
+  border: 3px solid #111B47;
+  background-color: #111B47;
+  color: white;
+}
+
+.hero-content .right-side img {
+  width: 100%;
+  margin-left: 70px;
+}
+
+/* responsive hero section*/
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-side {
+    order: 2;
+  }
+
+  .right-side {
+    order: 1;
+  }
+
+  .right-side img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/*========================================= mobile section design ================================================================*/
+ .mobile-section {
+  padding: 10px 40px;
+  margin: 10px 0;
+}
+
+.mobile-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-content {
+  margin: auto;
+}
+
+.mobile-content .heading {
+  font-size: 36px;
+  color: #091133;
+  line-height: 48px;
+}
+
+.mobile-content p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6F7CB2;
+}
+
+.mobile-content .sub-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.sub-content-1 {
+  width: 50%;
+}
+
+.sub-content-1 h5 {
+  font-size: 16px;
+  color: #091133;
+  line-height: 26px;
+}
+
+.sub-content p {
+  font-size: 12px;
+  color: #5D6970;
+  line-height: 18px;
+  width: 70%;
+}
+
+.sub-content .mobile-img {
+  width: 100%;
+}
+
+.sub-content .mobile-img img {
+  width: 12%;
+}
+
+.mobile-content .image img {
+  width: 100%;
+  height: auto;
+} 
+
+@media screen and (max-width: 768px) {
+  .mobile-container {
+    flex-direction: column;
+  }
+}
+
+/*========================================================== zigzag section design========================================================= */
+.zigzag-section {
+  padding: 10px 50px;
+  margin: 5% 0;
+}
+ .zigzag-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.zigzag-container .zigzag-img {
+  width: 100%;
+  margin-right: 120px;
+}
+
+.zigzag-container .zigzag-img img {
+  width: 100%;
+  height: auto;
+}
+
+.zigzag-container .zigzag-content {
+  margin: auto;
+}
+
+.zigzag-content .heading {
+  font-size: 36px;
+  color: #091133;
+  line-height: 48px;
+}
+
+.zigzag-content p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6F7CB2;
+  width: 95%;
+}
+.zigzag-content .button-primary {
+  background-color: #1d3452;
+  color: #ffff;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+} 
+
+.zigzag-section:nth-child(2n+2) .zigzag-container {
+  flex-direction: row-reverse;
+}
+
+.zigzag-section:nth-child(2n+2) .zigzag-img {
+  margin-right: 0;
+  margin-left: 120px;
+}
+/* responsive zigzag section css */
+@media screen and (max-width: 768px) {
+  .zigzag-container {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .zigzag-container .zigzag-img,
+  .zigzag-container .zigzag-img img {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .zigzag-container .zigzag-content {
+    margin: auto;
+  }
+
+  .zigzag-content .button-primary {
+    margin: 10px 0;
+  }
+
+  .zigzag-section:nth-child(2n+2) .zigzag-container {
+    flex-direction: wrap-reverse;
+  }
+
+  .zigzag-section:nth-child(2n+2) .zigzag-img {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+/* ===================================prize section css=============================================================== */
+.prize-section {
+  padding: 20px 20px;
+  background-color: rgb(242, 255, 251);
+}
+
+.prize-section .prize-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prize-container h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  color: #091133;
+  line-height: 48px;
+  font-family: Robato;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.prize-container p {
+  font-size: 16px;
+  color: #6F7CB2;
+  line-height: 26px;
+  font-family: Robato;
+}
+
+.prize-container .btn1 {
+  padding: 5px 20px;
+  font-size: 10px;
+  border-radius: 5px;
+  background-color: #072342;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin: 0%;
+}
+/* responsive */
+@media only screen and (max-width: 600px) {
+  .prize-container h1 {
+    font-size: 36px;
+  }
+
+  .prize-container p {
+    font-size: 14px;
+  }
+
+  .prize-container .btn1 {
+    font-size: 12px;
+  }
+}
+/* =========================================footer section css=================================================================================================== */
+ .footer {
+  padding: 10px 20px;
+  background-color: rgb(215, 253, 240);
+  margin-top: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  color: #939EA4;
+  line-height: 24px;
+  font-family: Robato;
+}
+
+.footer-content .logo {
+  font-size: 24px;
+}
+
+.footer-content .button-primary {
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: #111B47;
+  margin: 0px 2px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  margin: 5px;
+}
+
+.footer-container .nav {
+  display: flex;
+}
+
+.footer-container .nav li {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #505F98;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 5px;
+  font-size: 12px;
+
+}
+
+.footer-container .link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .link .icon {
+  font-size: 12px;
+  color: #505F98;
+  margin: 5px;
+}
+/* ==============================================scroll top button================================================================================ */
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(165, 238, 246);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+} 
+
+
+

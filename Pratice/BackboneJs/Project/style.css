@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background:url('https://media.istockphoto.com/id/1346866948/photo/online-working-from-home-office.jpg?s=2048x2048&w=is&k=20&c=BIrlcZ7Mxdr4AGQizutvomTKdSQBCeIYsO1LBL2TqnU=') center center no-repeat;
+    background-size: cover; 
+   
+  }
+  
+  #myForm {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+   
+  }
+#myForm h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+#myForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#myForm input[type="text"],
+#myForm input[type="email"],
+#myForm textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+
+}
+
+#myForm input[type="submit"] {
+    background-color: gray;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

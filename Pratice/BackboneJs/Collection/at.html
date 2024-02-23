@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation-At</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"
+        type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"
+        type="text/javascript"></script>
+</head>
+<body>
+  <script>
+    var Team = Backbone.Model.extend()
+
+    var player1 = new Team({
+        name: "Dhoni",
+        playedForm: "India",
+        performance:"Good"
+    })
+
+    var player2 = new Team({
+        name: "virat kohali",
+        playedForm: "India",
+        performance:"Good"
+    })
+
+    var collection= Backbone.Collection.extend()
+    var Players=new collection([
+        player1,player2
+    ])
+    // add model last index
+    console.log(Players);
+    Players.add(
+      new Team({
+        name: "amir",
+        playedForm: "pakistan",
+        performance:"ok"
+      }),
+      {at:1}
+    )
+
+
+</script>
+</body>
+</html>

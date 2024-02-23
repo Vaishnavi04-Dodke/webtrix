@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tababr</title>
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+        
+      
+        .tab {
+          float: left;
+          background-color: #f1f1f1;
+          width: 30%;
+          height: 300px;
+        }
+        
+    
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: black;
+          padding: 22px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+        
+   
+        .tab button:hover {
+          background-color: #ddd;
+        }
+        
+   
+        .tab button.active {
+          background-color: #F9F9F9;
+        }
+        
+        .tabcontent {
+          float: left;
+          padding: 0px 12px;
+       
+          width: 70%;
+          border-left: none;
+         
+          background-color: #F9F9F9;
+        }
+        .tabcontent h2{
+            text-align: center;
+            font-size: 25px;
+  
+           margin: 40px 0;
+        }
+        .tab-img {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        }
+        .tabcontent p{
+           margin: 30px 0px;
+            font-size: 18px;
+        }
+        .tabcontent ul li{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Acupressure')" id="defaultOpen">Acupressure</button>
+        <button class="tablinks" onclick="openCity(event, 'Homeopathy')">Homeopathy Therapies</button>
+        <button class="tablinks" onclick="openCity(event, 'Yoga')">Yoga</button>
+        <button class="tablinks" onclick="openCity(event, 'Reiki')">Reiki</button>
+        <button class="tablinks" onclick="openCity(event, 'Psychological')">Psychological Counselling</button>
+        <button class="tablinks" onclick="openCity(event, 'Sujok')">Sujok</button>
+        <button class="tablinks" onclick="openCity(event, 'Ear')">Ear Acupuncture</button>
+        <button class="tablinks" onclick="openCity(event, 'Shiatsu ')">Shiatsu And Moxibustion</button>
+      </div>
+      
+      <div id="Acupressure" class="tabcontent">
+        <h2>Acupressure</h2>
+        <div class="tab-img">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab00_webtrix-min(1).jpg" alt="tab00">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab002_webtrix-min(1).jpg" alt="tab01">
+        </div>
+        <p>Acupressure is an ancient Chinese Therapy which works excellent in all the diseases especially
+<ul><li>Cervical spondyloisis</li>
+<li>Asthma</li>
+<li>Backache</li>
+<li>Migraine</li>
+<li>Acidity</li>
+<li>Mental Tension</li>
+<li>Skin rejuvenation</li>
+<li>Arthritis</li>
+<li>Knee Pain</li>
+<li>Lumbar Pain</li>
+<li>Varicose Veins</li></ul>
+        </p>
+      </div>
+      
+      <div id="Homeopathy" class="tabcontent">
+        <h2>Homeopathy Therapies</h2>
+        <div class="tab-img">
+<img src="https://cms.webtrixsolutions.in/uploads/tab01_webtrix-min.jpg" alt="tab03">
+<img src="https://cms.webtrixsolutions.in/uploads/tab03_webtrix-min.jpg" alt="tab04">
+<img src="https://cms.webtrixsolutions.in/uploads/tab04_webtrix-min.jpg" alt="tab05">
+        </div>
+        <p>Homeopathy is a medical system based on the belief that the body can cure itself. Homeopathy is based on the theory of ‘like cures like’ and the ‘law of the smallest dose’. To treat an illness, a homeopathic therapist (homeopath) uses tiny doses of a substance. In large doses, the substance would cause the symptoms of the illness. Among the most common conditions that people seek homeopathic treatment for are:asthma, ear infections,hay fever, mental health conditions, such as depression, stress and anxiety, allergies, such as food allergies dermatitis (an allergic skin condition), arthritis, high blood pressure etc.</p> 
+      </div>
+      
+      <div id="Yoga" class="tabcontent">
+        <h2>Yoga</h2>
+        <div class="tab-img">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab05_webtrix-min.jpg" alt="tab05">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab06_webtrix-min.jpg" alt="tab06">
+        </div>
+        <p>It is a natural healing medical therapy in which your mind and body are taken into consideration. Diseases treated are :</p>
+        <ul>
+            <li>Mind Concentration</li>
+            <li>Insomnia</li>
+            <li>Bone Diseases</li>
+            <li>Posture Problems.</li>
+        
+        </ul>
+        <p>Especially designed course for children to increase concentration and to gain confidence.</p>
+      </div>
+      <div id="Reiki" class="tabcontent">
+        <h2>Reiki</h2>
+        <div class="tab-img">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab07_webtrix-min.jpg" alt="tab07">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab08_webtrix-min.jpg" alt="tab08">
+        </div>
+        <p>It is an energy healing process which helps a person to gain his mental and physical energy loss. It helps to recover body from :</p>
+        <ul>
+            <li>Chronic ailments</li>
+            <li>Speed up recovery</li>
+            <li>In this technique circle of transformation of energy is formed in negative and positive zone.</li>
+        </ul>
+       
+      </div>
+      <div id="Psychological" class="tabcontent">
+        <h2>Psychological Counselling</h2>
+        <div class="tab-img">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab09_webtrix-min.png" alt="tab09">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab10_webtrix-min.jpg" alt="tab10">
+            <img src="https://cms.webtrixsolutions.in/uploads/tab11_webtrix-min.jpg" alt="tab11">
+        </div>
+        <p>For a better and happy life we need to be positive. We help you to tackle your own problem and get solution by yourself.  So it gives wise to a healthy human mind which in turn creates healthy body</p>
+       
+      </div>
+      <div id="Sujok" class="tabcontent">
+        <h2>Sujok</h2>
+        <div class="tab-img">
+            <p>In Sujok treatment  points on the fingers and feet are stimulated with Seeds, sterilized disposable needles  or Magnet. Sujok is  very effective  in curing Stress and Mental tension, Asthma, Thyroid, Respiratory problems, Constipation , Knee pain, Back pain, Heel pain Varicose veins , Sciatica  and various other acute & chronic diseases.</p>
+            <img src="https://cms.webtrixsolutions.in/uploads/tab12_webtrix-min.jpg" alt="tab12">
+           
+        </div>
+      
+      </div>
+      <div id="Ear" class="tabcontent">
+        <h2>Ear Acupuncture</h2>
+        <div class="tab-img">
+            <p>
+                In ear acupuncture  points on the ear are stimulated with ear needles which are tiny. Obesity, infertility, asthma, headache, spondylosis are very well treated with ear acupuncture without any side effect.</p>
+            <img src="https://cms.webtrixsolutions.in/uploads/tab13_webtrix-min.jpg" alt="tab13">
+           
+        </div>
+      </div>
+      <div id="Shiatsu " class="tabcontent">
+        <h2>Shiatsu And Moxibustion</h2>
+        <div class="tab-img">   <img src="https://cms.webtrixsolutions.in/uploads/tab14_webtrix-min.jpg" alt="tab14">    </div>
+            <p>
+                Shiatsu is an ancient Japanese therapy. The points on the whole body are pressed with fingers or instruments to stimulate the Meridians & to stabilise Yin & Yang forces in body to increase the energy level of the body.
+                Shiatsu is very useful in reducing stress level , Headache migraine,orthopadic problems like knee ,neck, back pain, cervical Spondylosis. Moxibustion is a Chinese therapy , in this moxa stick is used which is made up of Chinese herbal wool . The stick is lit and the points are stimulated by heat from a distance..</p>
+           
+           
+ 
+      </div>
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        document.getElementById("defaultOpen").click();
+        </script>
+           
+</body>
+</html> 
+

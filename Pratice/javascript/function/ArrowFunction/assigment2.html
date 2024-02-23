@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+          const countVowels =(str)=>{
+            count=0;
+            for(let char of str){
+                if(
+                    char==="a"||
+                    char==="e"||
+                    char==="i"||
+                    char==="o"||
+                    char==="u" )
+                {
+                    count++;
+                }
+             
+            }
+            return count;
+        };
+        const inputstring="Example string with vowels";
+        const vowelcount=countVowels(inputstring);
+        console.log(vowelcount);
+    </script>
+</body>
+</html>

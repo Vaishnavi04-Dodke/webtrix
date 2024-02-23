@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Function</title>
+</head>
+<body>
+    <script>
+        function student(Education) {
+            return {
+            // object  property
+            fname: "vaishnavi",
+            lname: "Dodke",
+            age: 24,
+            Education: Education,
+            passout: 2023,
+            percentage: "70%",
+            // object method
+            hire: function hire() {
+                console.log("You are eligible for this job")
+            },
+            //  nested object 
+            Eligible: {
+                true: "You are eligible",
+                false: "You are not eligible"
+            }
+        } 
+
+    }
+      let Vaccancy=student("MCA");
+     console.log(Vaccancy.Education);
+    </script>
+</body>
+</html>

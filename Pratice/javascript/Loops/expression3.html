@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression 3 can also be omitted</title>
+</head>
+
+<body>
+    <h1>Expression 3 can also be omitted</h1>
+    <h2>JavaScript For Loop</h2>
+    <p id="demo"></p>
+    <script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        let text = " ";
+        for (let i = 0; i < cars.length;) {
+            i++;
+            text += cars[i] + "<br>";
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

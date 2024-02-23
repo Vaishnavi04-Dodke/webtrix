@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Card Example</title>
+<style>
+  .card {
+    width: 200px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    background-color: rgb(52, 152, 219);
+    /* background:linear-gradient(rgba(52, 152, 219,0.2)rgba(52, 152, 219,0.2)),url(image/single-featured-bg.jpg); */
+  }
+  
+  .card-text {
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card:hover .card-text {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <p>This is a hover card.</p>
+  <div class="card-text">Hovered!</div>
+</div>
+
+</body>
+</html>

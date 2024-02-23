@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return</title>
+</head>
+
+<body>
+    <h1>function Return</h1>
+    <p>, you can use a return statement without returning any value just to stop the execution of the function.</p>
+
+    <script>
+       function pass(mark) {
+    if (mark < 35) {
+        alert("You have failed");
+        return false;
+    } else if (mark >= 35 && mark <= 100) {
+        alert("Congratulations! You have passed");
+        return true;
+    } else {
+        alert("Please enter valid marks between 0 and 100");
+        return false;
+    }
+}
+
+var result = pass(70); // Calling the function and storing the returned value
+console.log(result); // Output: true
+
+    </script>
+</body>
+
+</html>

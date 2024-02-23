@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling DOM Event</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"
+        type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var songmodel = Backbone.Model.extend();
+        var Model = new songmodel({
+            title: "oo khuda",
+            singer: "argit sigh"
+        });
+        var songview = Backbone.View.extend({
+            event: {
+                'click': 'onclick',
+                'click .play': 'onclickplay'
+            },
+            render: function () {
+                console.log("Songview");
+                this.$el.html(this.model.get("title") + "  <button>Stop</button>" + " <button class=play> Play</button>");
+
+            },
+            onclick: function () {
+                console.log("Song stop");
+            },
+            onclickplay: function () {
+
+                console.log("Song play");
+            }
+        });
+        var view = new songview({
+            el: "#demo",
+            model: Model
+        });
+      
+        view.$el.on('click', '.play', function (e) {
+            e.stopPropagation()
+            view.onclickplay();
+        });
+        view.$el.on('click', function () {
+            view.onclick();
+        });
+
+        view.render();
+    </script>
+</body>
+
+</html>

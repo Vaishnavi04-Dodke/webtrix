@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+        const Vaccancy = {
+            // object  property
+            fname: "vaishnavi",
+            lname: "Dodke",
+            age: 24,
+            Education: "MCA",
+            passout: 2023,
+            percentage: "70%",
+            // object method
+            hire: function hire() {
+                console.log("You are eligible for this job")
+            },
+            //  nested object 
+            Eligible: {
+                true: "You are eligible",
+                false: "You are not eligible"
+            }
+        }
+        // object createted
+        // how to access the object
+        console.log(Vaccancy);
+        
+        // new propert add dynamicaly
+        // object are dynamic in nature
+        // object is refrence datatype thats why object will be redeclare
+        Vaccancy.selected="You got selected";
+    </script>
+</body>
+
+</html>

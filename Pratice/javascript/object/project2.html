@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of object</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Name With Marks:</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Marks</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <script>
+                let students = [
+                    { Name: 'Vaishnavi', marks: 70, Result:"pass" },
+                    { Name: 'swati', marks: 85 ,Result:"pass "},
+                    { Name: 'shiv', marks: 60 ,Result:"pass"},
+                    { Name: 'sakshi', marks: 90 ,Result:"pass"},
+                    { Name: 'vishal', marks: 30 ,Result:"fail"},
+                    { Name: 'anjali', marks: 95 ,Result:"pass"},
+                    { Name: 'aju', marks: 20 ,Result:"fail"},
+                    { Name: 'sneha', marks: 50  ,Result:"pass"},
+                    { Name: 'ankita', marks: 40 ,Result:"pass"},
+                    { Name: 'saloni', marks: 10 ,Result:"fail"}
+                ];
+                for (let i = 0; i < students.length; i++) {
+                    document.write('<tr>');
+                    document.write(`<td>${students[i].Name}</td>`);
+                    document.write(`<td>${students[i].marks}</td>`);
+                    document.write(`<td>${students[i].Result}</td>`);
+                    document.write('</tr>');
+                }
+                // console.log("Students with marks >= 80:");
+                // for (let student of students) {
+                //     if (student.marks >= 80) {
+                //         console.log(`${student.Name}: ${student.marks}`);
+                //     }
+                // }
+                // console.log("Students who are fail");
+                // for (let student of students) {
+                //     if (student.Result == "fail") {
+                //         console.log(`${student.Name}: ${student.marks}`);
+                //     }
+                // }
+                console.log("Students with marks >= 80 and Students who are fail:");
+                for (let student of students) {
+                    if (student.marks >= 80 && student.Result=="pass") {
+                        console.log(`${student.Name}: ${student.marks}: ${student.Result}`);
+                    }
+                }
+
+                console.log("Remaining students:");
+                for (let student of students) {
+                    if (student.marks >= 35 && student.marks < 80) {
+                        console.log(`${student.Name}: ${student.marks}`);
+                    }
+                }
+            </script>
+</body>
+
+</html>

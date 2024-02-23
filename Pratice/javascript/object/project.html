@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+
+<body>
+    <script>
+        let Drive= {
+            // object  property
+            fname: "vaishnavi",
+            lname: "Dodke",
+            Education: "bsc",
+            passout: 2023,
+            percentage: "70%",
+            // object method
+            hire: function hire() {
+                if ((this.Education == "MCA" || this.Education == "BCA" || this.Education == "B-tech" || this.Education == "M-tech") &&
+                    (this.passout === 2021 || this.passout === 2023) && (this.percentage >= 60)) {
+                    return "You are eligible for the drive";
+                } else {
+                    return "You are not eligible for the drive";
+                }
+            }
+        };
+        console.log(Vaccancy.hire());
+    </script>
+</body>
+
+</html>

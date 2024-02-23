@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parameter</title>
+</head>
+<body>
+   <b>When a number of arguments are less than parameters then the rest parameters will be undefined
+    when the number of arguments are more than parameters then extra arguments will be ignored</b>
+    <script>
+        function msg(user, msg) {
+            console.log("user :" + user + " msg: " + msg);
+        }
+        msg("vishal","how are you ?","Hii"); //ignore
+        msg("vishal");   //undefined
+    </script>
+</body>
+</html>

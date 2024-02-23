@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+</head>
+
+<body>
+    <script>
+        function add(a, b) {
+            var c = a + b;
+            console.log(c);
+            return c;
+           
+        };
+        function sub(a, b) {
+            var c = a-b;
+            return c;
+        };
+        function multi(a, b) {
+            var c = a * b;
+            console.log(c);
+            return c;
+        };
+        function div(a, b) {
+            var c = a / b;
+            console.log(c);
+            return c;
+        };
+        function Calculation(a, b, CallBack) {
+            CallBack(a, b)
+            
+        };
+        Calculation(10,2,add);
+        Calculation(10,2,sub)
+        Calculation(10,2,multi);
+        Calculation(10,5,div)
+    </script>
+</body>
+
+</html>

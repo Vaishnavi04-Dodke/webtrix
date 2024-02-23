@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nameing Convention</title>
+</head>
+
+<body>
+    <h2>Variable name should start with a letter or underscore _
+        Variable name should not contain any special characters like $, #, @, %, ^, etc.
+        Variable name should not start with a number
+        Advertisements
+
+        Ezoic
+        Variable names can contain numbers, digits (A-Z, a-z) and underscores
+        Only two special characters are allowed in variable name: $ and _
+        Reserved words can't be used as variable names like let, class, true, etc.</h2>
+    <script>
+        var 1abc; // invalid
+        var _1abc; // valid
+        var _1_abc; // valid
+        var _1_abc_; // valid
+        var $ = 5; // valid
+        var _$ = 5; // valid
+        var _1_abc$ = 5; // valid
+        var _ = "hello"; // valid
+        var cat123$ = "Some cats"; // valid
+        var cat123_ = "Some cats"; // valid
+        var dog@12 = "Some Dog"; // invalid
+        var abc = 10; // valid
+        var Abc = 11; // invalid
+        // abc and Abc are different
+    </script>
+</body>
+
+</html>

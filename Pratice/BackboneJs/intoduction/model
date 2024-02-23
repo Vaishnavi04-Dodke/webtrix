@@ -1,0 +1,13 @@
+Model:
+    Model can be used access database through of oour application.
+    model can access input and output data come from view.
+    models are responsible for organize your data structure.
+
+Collection:
+    Collection is group of models.
+
+View:
+   backbone js provides views layout for a  it's interface to interpret the data with basically comes from models and collection.
+
+Router:
+     router are used to rendering the pages of your application       

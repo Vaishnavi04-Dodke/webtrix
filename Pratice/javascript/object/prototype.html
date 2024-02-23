@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+
+<body>
+    <script>
+        function person(firstname, lastname, age) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.age = age;
+        }
+        person.prototype.fullname = function() {
+           return "my name is " + this.firstname  +" "+ this.lastname
+        }
+        let people = new person("vaishnavi", "dodke", 24);
+        let people2 = new person("vishal", "dodke", 21);
+        console.log(people);
+        console.log(people2);
+      console.log(people.fullname());
+      console.log(people2.fullname());
+    </script>
+</body>
+
+</html>

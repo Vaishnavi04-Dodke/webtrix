@@ -1,0 +1,6 @@
+View:
+   Renders the content.
+   Responds event
+   property:
+     el:is dom element which is represent the page
+     $el:is jquery object whic refers to the dom element

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Declaration vs expression</title>
+</head>
+
+<body>
+    <h1>Javascript Function Declaration VS Expression</h1>
+    <p>A function declaration can be hoisted but a function expression can't be hoisted. It means you can use a function
+        before it is declared while you can't use a function before function expression is declared.</p>
+
+    <script>
+        hello(); // run successfully
+        function hello() { // function declaration
+            return "Hello World!";
+        }
+
+    </script>
+    <script>
+        hello(); // error function not declared
+        let hello = function () { // function expression
+            return "Hello World!";
+        }
+    </script>
+</body>
+
+</html>

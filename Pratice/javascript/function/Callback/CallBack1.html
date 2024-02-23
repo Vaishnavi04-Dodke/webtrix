@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack function</title>
+</head>
+
+<body>
+    <script>
+        function show(a) {
+            console.log("Hello Show Function " +a);
+        };
+        function geeky(CallBack) {
+            var a = 10;
+            CallBack(a)
+            console.log("Hello Geeky Function");
+        };
+        geeky(show)
+    </script>
+</body>
+
+</html>

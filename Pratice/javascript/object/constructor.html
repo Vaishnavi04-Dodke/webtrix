@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+   <script>
+    // creating a function to create an object
+
+function person(firstname, lastname, age) {
+  this.firstname = firstname;
+  this.lastname = lastname;
+  this.age = age;
+}
+
+// creating an object using the function
+let person1 = new person("steve", "jobs", 25);
+console.log(person1);
+
+let person2 = new person("john", "smith", 35);
+console.log(person2);
+   </script> 
+</body>
+</html>

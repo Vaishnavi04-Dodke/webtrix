@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <form id="myForm" name="myform" onsubmit="return formValidate()">
+        <h1>Student Form</h1>
+        <label for="first_name" class="required">Full Name:</label><br>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter your First name"><br>
+        <span id="err"></span>
+
+        <label for="number">Phone Number:</label><br>
+        <input type="text" id="number" name="number" placeholder="Enter your Number"required>
+        <span id="error1"></span>
+
+        <label for="email" class="required">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter your Email"><br>
+        <span id="error"></span>
+
+        <label for="date_of_birth" class="required">Date of Birth:</label><br>
+        <input type="date" id="date_of_birth" name="date_of_birth" max="2023-11-02"><br>
+        <span id="errorr"></span>
+
+        <label for="gender" class="required">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female" required> Female
+        <input type="radio" id="other" name="gender" value="other" required> Other<br><br>
+
+        <label for="address" class="required">Address:</label><br>
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+        <span id="erro"></span>
+
+
+        <input type="submit" value="ADD" id="submit">
+        <input type="button" value="UPDATE" id="update" style="display: none;">
+
+
+    </form>
+    <table border="1" cellspacing="0" id="table">
+        <tr>
+            <th>Full Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    
+    <div id="popup" style="display: none;" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closePopup">&times;</span>
+            <p id="successMessage">Data successfully added!</p>
+        </div>
+    </div>.
+
+    <script src="/assets/javascript/form.js"></script>
+</body>
+
+</html>

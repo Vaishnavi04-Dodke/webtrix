@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Object method</title>
+</head>
+
+<body>
+    <script>
+
+        let Vacancy = {
+            // object  property
+            fname: "vaishnavi",
+            lname: "Dodke",
+            age: 24,
+            Education: "MCA",
+            passout: 2023,
+            percentage: "70%",
+            // object method
+            hire: function hire() {
+                console.log("You are eligible for this job")
+            },
+            //  nested object 
+            Eligible: {
+                true: "You are eligible",
+                false: "You are not eligible"
+            }
+        };
+
+        document.write(" First Name:  " + Vacancy.fname + "<br>");
+        document.write(" Last Name:  " + Vacancy.lname + "<br>");
+        document.write(" Age:  " + Vacancy.age + "<br>");
+        document.write(" Education: " + Vacancy.Education + "<br>");
+        document.write(" Passout Year:  " + Vacancy.passout + "<br>");
+        document.write(" Percentage: " + Vacancy.percentage + "<br>");
+        document.write("Eligible (True): " + Vacancy.Eligible.true + "<br>");
+        document.write("Eligible (False): " + Vacancy.Eligible.false + "<br>");
+
+        const newstudent = Object.create(Vacancy);
+        // object  property
+        newstudent.fname = "vishal",
+            newstudent.lname = "Dodke",
+            newstudent.age = 21,
+            newstudent.Education = "Bcom",
+            newstudent.passout = 2023,
+            newstudent.percentage = "70%",
+            // object method
+            newstudent.hire = function hire() {
+                console.log("You are eligible for this job")
+            },
+            //  nested object 
+            newstudent.Eligible = {
+                true: "You are eligible",
+                false: "You are not eligible"
+            }
+        console.log(newstudent);
+    </script>
+
+    </script>
+</body>
+
+</html>

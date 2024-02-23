@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+        integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .heading-border-line {
+            position: relative;
+
+        }
+
+        .heading-border-line::before {
+            content: "";
+            width: 12px;
+            height: 4px;
+            background: yellow;
+            position: absolute;
+            border-radius: 2px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            bottom: 5px;
+
+        }
+
+        .heading-border-line::after {
+            content: "";
+            width: 65px;
+            height: 4px;
+            background: yellow;
+            position: absolute;
+            margin-left: 20px;
+            border-radius: 2px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            bottom: 5px;
+
+
+        }
+
+        .heading-border-line:hover::after {
+            width: 12px;
+            background: red;
+            left: 50px;
+        }
+
+        .heading-border-line:hover::before {
+            width: 65px;
+            background: red;
+        }
+
+       
+        .img {
+            position: relative;
+            display: block;
+        }
+
+        .img img {
+            position: relative;
+            display: block;
+            /* width: 100%; */
+        }
+
+        .content {
+            position: absolute;
+            top: 25%;
+            left: 2%;
+            text-align: center;
+        }
+
+        .content h3 a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            line-height: 1.6em;
+
+        }
+
+        .content .text {
+            color: #fff;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            font-weight: 300;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            /* display: none; */
+        }
+
+        .content .view-more {
+            margin-top: 16px;
+            color: #fde428;
+            font-size: 13px;
+            display: inline-block;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            /* display: none; */
+        }
+
+        .img:hover::after {
+            display: block;
+            transform: translateY(0);
+        }
+
+        .img:hover .content {
+          display: flex;
+        }
+        @keyframes slideIn {
+    from {
+        transform: translateY(100%); 
+    }
+    to {
+        transform: translateY(0); 
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Our products</h3>
+        <div class="heading-border-line">
+        </div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/brands.min.js"
+        integrity="sha512-giAmE8KpCT6HP3DEwIvW9LYVnDs79iIaKEYFTjH62EWoglWgdAJa1ahiLUfoc3NFaAeWM6E3VdQyH1Ob2dmwQw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

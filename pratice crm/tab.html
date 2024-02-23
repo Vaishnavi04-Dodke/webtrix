@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .pannel {
+            border-color: #f0f0f0;
+            background-color: #f8f8f8;
+            display: block;
+            padding: 46px 20px;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            transition: background-color 0.2s ease-in-out;
+            border: none;
+            box-shadow: none;
+            cursor: pointer; 
+            border: 1px solid #f2f2f2;
+        }
+        .pannel:hover {
+    background-color: #f3f3f3; /
+}
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+        .content p {
+            font-size: 18px;
+            color: black;
+            margin-bottom: 20px;
+        }
+        .treatments:hover {
+            background-color: #F6F6F6;
+        }
+        .heading h4 {
+            color: #666;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="treatments">
+        <div class="pannel">
+        <div class="heading">
+            <h4><a href="#" class="link">Insomnia</a></h4>
+        </div>
+    </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="https://cms.webtrixsolutions.in/uploads/panel00_webtrix.gif" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <p>Insomnia is an anxiety disorder which is commonly seen nowadays. In this competitive world due to various causes insomnia occurs. In this condition patient gets sleepless nights or he might suffer from dream disturbed sleep. When the person gets up he does not feel fresh. Acupressure, acupuncture, yoga and reiki with homeopathy can give miraculous results. A lady came to me who was suffering from insomnia since last 25 years whose age was 50. With the help of acupressure for a 15 days with the help of homeopathic treatment she could sleep well for continuous seven hours. So acupressure is a great medicine for insomnia and without intermingling with any other system or treatment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="treatments">
+        <div class="pannel">
+        <div class="heading">
+            <h4 class="link">Does it have any side effects?</h4>
+        </div>
+    </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-12">
+                  <p>Acupuncture acupressure sujok are all natural therapies.They do not have any bad effects on the body.They remove the disease from the roots to give parmanent cure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript to toggle content visibility
+        document.querySelectorAll('.treatments').forEach(function(treatment) {
+            treatment.addEventListener('click', function() {
+                var content = this.querySelector('.content');
+                document.querySelectorAll('.content').forEach(function(c) {
+                    if (c !== content) {
+                        c.classList.remove('show');
+                    }
+                });
+                content.classList.toggle('show');
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

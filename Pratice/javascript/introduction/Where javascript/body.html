@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Tag</title>
+</head>
+
+<body>
+    <h2>Demo JavaScript in Body</h2>
+    <p>Placing scripts at the bottom of the
+
+        body tag element improves the display speed, because script interpretation slows down the display.
+    </p>
+    <p> JavaScript function is placed in the
+
+        <body> section of an HTML page.
+
+            The function is invoked (called) when a button is clicked:
+    </p>
+    <p id="demo">A Paragraph.</p>
+    <button onclick="myfunction()">Try it</button>
+
+    <script>
+        function myfunction() {
+            document.getElementById("demo").innerHTML = "Paragraph Changed"
+        }
+    </script>
+</body>
+
+</html>

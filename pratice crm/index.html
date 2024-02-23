@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .service {
+            background-color: #012f5d;
+            padding: 40px;
+        }
+
+        .service::before {
+            background: red;
+        }
+
+        .icon-box {
+            position: relative;
+        }
+
+        .icon-box::before {
+            content: url('image/medal (5).png');
+            position: absolute;
+            top: 25%;
+            left: 39px
+        }
+
+        .content {
+            color: #fff;
+          
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="service">
+        <div class="icon-box">
+            <img src="./image/hexagon (1).png" alt="">
+        </div>
+        <div class="content">
+            <div class="heading">
+                <h3>Creditable Integrity</h3>
+                <p>Value talent cultivation and encourage <br>creative innovation</p>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background: linear-gradient(to right, #8a2be2 , #ff6ec7, #ff9800 );
+}
+.login{
+  background-color: black;
+  width: 45%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+}
+.login h1{
+  font-family: 'Instrument Serif', serif; 
+  text-align: center;
+  color: #ffff;
+  font-weight: 700;
+}
+.fget{
+  position: relative;
+}
+.fget .small{
+  color: blue;
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+
+}
+.login .btn{
+  width: 100%;
+}
+.login p {
+  position: relative; /* Add this for positioning pseudo-elements */
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+}
+.login p::before,
+.login p::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Adjust this value to position the line vertically */
+  width: 45%; /* Adjust this value to control the length of the line */
+  height: 2px;
+  background-color: rgb(203, 203, 219);
+}
+.login p::before {
+  left: 0;
+}
+
+.login p::after {
+  right: 0;
+}
+
+.login hr{
+  color: #ffff;
+}
+.footer{
+  margin-top: 80px;
+}
+.login .footer{
+ text-align: center;
+  color: #ffffff;
+}
+
+/* ========================================================= signup page csss================================================================= */
+.signup{
+  width: 45%;
+  margin: auto;
+  padding:70px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: black;
+
+}
+.signup h1{
+  font-family: 'Instrument Serif', serif; 
+  text-align: center;
+  color: #ffff;
+  font-weight: 700;
+}
+.signup span{
+  color: #fff;
+ font-size: 29px;
+}
+.signup .btn{
+  width: 100%;
+}
+.signup p {
+  position: relative; /* Add this for positioning pseudo-elements */
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+}
+.signup p::before,
+.signup p::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Adjust this value to position the line vertically */
+  width: 45%; /* Adjust this value to control the length of the line */
+  height: 2px;
+  background-color: rgb(203, 203, 219);
+}
+.signup p::before {
+  left: 0;
+}
+
+.signup p::after {
+  right: 0;
+}
+.signup hr{
+  color: #fff;
+}
+.footer small{
+  color: #fff;
+}
+/* flipper effect */
+.flip-container {
+  perspective: 1000px;
+}
+.flipper{
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-container:hover .flipper
+{
+  transform: rotateY(180deg);
+}
+
+/* .signup, .login {
+  position: absolute;
+  -webkit-backface-visibility: hidden; /* Safari */
+  /* backface-visibility: hidden; */
+} */
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+    

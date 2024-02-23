@@ -1,0 +1,27 @@
+
+What is Backbone.js
+The Backbone.js is a very light weight JavaScript library or framework that facilitates developers to create a single page application in a structured manner. These client side applications run on a web browser. It is based on MVC pattern which abstracts data into models, DOM into views and bind these two using events.
+
+Backbone.js is mainly used for creating single page applications using a RESTful service for persisting data.
+
+History
+Backbone.js was initially released on October 13, 2010. It was developed by Jeremy Ashkenas.
+
+When to use Backbone.js
+Backbone.js is used to reduce complications. For example: Suppose, you are creating an application having lots of line of codes using jQuery or JavaScript. The application generally becomes complicated when you add or replace DOM elements to the application or make some requests or show animation in the application or add extra lines to your code, the application may become complicated. So, Backbone.js provides an easy way to overcome with these complications.
+If your application is having lots of codes and you want a better design then Backbone.js library can be used for good functionality. It provides a well organized and structured way to develop your application.
+Backbone communicates via events, so you will get a fast application and your code will be cleaner, nicer and more maintainable. 
+
+Backbone.js Features
+Following is a list of the most prominent features of Backbone.js:
+
+
+Backbone.js allows developers to develop one page applications and front-end much easier and better using JavaScript functions.
+Backbone provides different types of building blocks like models, views, events, routers and collections for assembling client side web applications.
+In Backbone.js when model changes, it automatically updates the HTML of your application.
+Backbone.js is a simple library used to separate business and user interface logic.
+Backbone.js is a free and open source library and contains over 100 available extensions.
+Backbone.js makes your code simple, systematic and organized. It acts like a backbone for your project.
+Backbone.js manages the data model which includes the user data and display that data at the server side with the same format written at client side.
+Backbone.js has soft dependency with jQuery and hard dependency with Underscore.js.
+Backbone.js allows developers to create client side web applications or mobile applications in well structured and organized format.
